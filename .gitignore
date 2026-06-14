@@ -1,0 +1,12 @@
+## .NET Build artifacts
+[Bb]in/
+[Oo]bj/
+
+## IDE tracking files
+.vscode/
+.DS_Store
+*.user
+*.suo
+
+## SECURITY: Never commit local development secrets!
+appsettings.Development.json
