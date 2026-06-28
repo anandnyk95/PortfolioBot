@@ -25,6 +25,8 @@ builder.Services.AddSingleton<IBotFrameworkHttpAdapter, CloudAdapter>(sp =>
 builder.Services.AddSingleton<IStorage, MemoryStorage>();
 builder.Services.AddSingleton<ConversationState>();
 builder.Services.AddSingleton<UserState>();
+builder.Services.AddHttpClient<RagService>();
+builder.Services.AddSingleton<RagService>();
 
 // Register the standard HttpClient factory
 builder.Services.AddHttpClient();
